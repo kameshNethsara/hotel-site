@@ -1,0 +1,100 @@
+Reset some basic defaults
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    /* height: 100%; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f5f0; 
+  }
+  
+  /* Main section styles */
+  .about-hotel-section {
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh; */
+    background-image: url("/assets/images/hotel-img-2 (1).jpg");
+    background-size: cover;
+    background-position: center;
+    
+  }
+  
+  .about-hotel-section .card {
+    max-width: 1000px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-hotel-section .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about-hotel-section .card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .about-hotel-section .card-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .about-hotel-section .card-text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+  .about-hotel-section ul {
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .about-hotel-section ul li {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #444;
+  }
+  
+  .about-hotel-section small {
+    color: #999;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .about-hotel-section .card {
+      flex-direction: column;
+    }
+  
+    .about-hotel-section .card img {
+      height: auto;
+      border-radius: 10px 10px 0 0;
+    }
+  
+    .about-hotel-section .row.g-0 {
+      flex-direction: column;
+    }
+  
+    .about-hotel-section .col-md-5,
+    .about-hotel-section .col-md-7 {
+      width: 100%;
+    }
+  }
+  
