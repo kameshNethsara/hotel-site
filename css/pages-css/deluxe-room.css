@@ -9,6 +9,7 @@
   .hero-section {
     animation: heroEntrance 1.2s ease-out forwards;
     opacity: 0;
+    
   }
   
   @keyframes heroEntrance {
@@ -20,6 +21,11 @@
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  .hero-content{
+    margin: 20px;
+    /* text-align: center; */
   }
   
   .hero-content h1 {
