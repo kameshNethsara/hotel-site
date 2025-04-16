@@ -1,0 +1,13 @@
+.hero-restaurant {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/assets/images');
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.menu-card {
+    transition: transform 0.3s;
+}
+.menu-card:hover {
+    transform: translateY(-10px);
+}
